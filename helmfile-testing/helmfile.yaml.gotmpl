@@ -1,0 +1,17 @@
+---
+bases:
+- ./api-versions.yaml
+- ./repositories.yaml
+
+---
+releases:
+- name: mongodb
+  chart: bitnami/mongodb
+  {{- if eq (env "ENVIRONMENT") "development" }}
+  installed: true
+  {{ else }}
+  installed: false
+  {{- end}}
+  values:
+  - ./helmfiles/helmfile.yaml.gotmpl
+  - ./helmfiles/{{ requiredEnv "ENVIRONMENT" }}/helmfile.yaml.gotmpl

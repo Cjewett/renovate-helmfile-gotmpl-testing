@@ -1,0 +1,5 @@
+repositories:
+- name: incubator
+  url: https://charts.helm.sh/incubator
+- name: bitnami
+  url: https://charts.bitnami.com/bitnami
