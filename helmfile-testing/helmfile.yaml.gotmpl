@@ -13,5 +13,5 @@ releases:
   installed: false
   {{- end}}
   values:
-  - ./values/values.yaml.gotmpl
-  - ./values/{{ requiredEnv "ENVIRONMENT" }}/values.yaml.gotmpl
+  - ./values_not_ok/values.yaml
+  - ./values_not_ok/{{ requiredEnv "ENVIRONMENT" }}/values.yaml
