@@ -1,4 +1,4 @@
 image:
   registry: docker.io
   repository: bitnami/mongodb
-  tag: 4.4.8-debian-10-r31
+  tag: 4.4.14-debian-10-r31
